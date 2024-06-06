@@ -1,5 +1,5 @@
 FROM pytorch/pytorch:2.2.1-cuda12.1-cudnn8-runtime
-RUN apt-get update && apt-get install -yqq ca-certificates
+RUN apt-get update && apt-get install -yqq ca-certificates curl
 RUN apt-get update && apt-get install -y build-essential libffi-dev libssl-dev gcc \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
