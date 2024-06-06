@@ -3,36 +3,5 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		"context": ".."
-	},
-	"features": {
-		"ghcr.io/devcontainers/features/github-cli:1": {},
-		"ghcr.io/wxw-matt/devcontainer-features/command_runner:0": {}
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"ms-python.python",
-				"ms-python.vscode-pylance",
-				"ms-toolsai.jupyter",
-				"ms-azuretools.vscode-docker",
-				"discretegames.f5anything",
-				"GitHub.copilot",
-				"GitHub.copilot-chat",
-				"GitHub.vscode-pull-request-github",
-				"ms-toolsai.jupyter-renderers",
-				"ms-vscode.live-server",
-				"littlefoxteam.vscode-python-test-adapter",
-				"Gruntfuggly.todo-tree",
-				"redhat.vscode-yaml",
-				"ms-python.black-formatter"
-			]
-		}
-	},
-	"runArgs": [
-		"--init"
-	],
-	"mounts": [
-		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
-		"source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached"
-	]
+	}
 }
