@@ -28,7 +28,6 @@
 			]
 		}
 	},
-	"postCreateCommand": "poetry install --no-root",
 	"runArgs": [
 		"--init"
 	],
