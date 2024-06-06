@@ -1,8 +1,4 @@
-ARG BASE_IMAGE=pytorch/pytorch:2.2.1-cuda12.1-cudnn8-runtime
-
-
-FROM $BASE_IMAGE as poetry-builder
-
+FROM pytorch/pytorch:2.2.1-cuda12.1-cudnn8-runtime 
 RUN apt-get update && apt-get install -yqq ca-certificates
 RUN apt-get update && apt-get install -y build-essential libffi-dev libssl-dev gcc \
     && apt-get clean \
